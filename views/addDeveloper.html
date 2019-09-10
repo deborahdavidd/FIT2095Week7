@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+     <link href="styles.css" rel="stylesheet" type ="text/css">
+</head>
+<body>
+    <h1>ADD A NEW DEVELOPER</h1>
+    <form action="/addNewDeveloper" method="POST">
+        First Name: <input type="text" name="firstname"><br/>
+        Last Name: <input type="text" name="lastname"><br/>
+        Level: <select name="level">
+            <option value="BEGINNER">BEGINNER</option>
+            <option value="EXPERT">EXPERT</option>
+        </select>
+        <br/>
+        <h3>Address:</h3>
+        State: <input type="text" name="state"><br/>
+        Suburb: <input type="text" name="suburb"><br/>
+        Street: <input type="text" name="street"><br/>
+        Unit: <input type="text" name="unit"><br/>
+        <button type="submit">Submit</button>
+    </form>
+    <br/>
+    <a href="/"> Home Page</a>    
+</body>

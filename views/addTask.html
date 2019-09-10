@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+     <link href="styles.css" rel="stylesheet" type ="text/css">
+</head>
+<body>
+    <h1>ADD A NEW TASK</h1>
+    <form action="/addNewTask" method="POST">
+        Task Name: <input type="text" name="taskname"><br/>
+        Assign To: <input type="text" name="assignto"><br/>
+        Due Date: <input type="date" name="duedate"><br/>
+        Status: <select name="status">
+            <option value="Completed">Completed</option>
+            <option value="in Progress">in Progress</option>
+        </select>
+        <br/>
+        Description: <input type="text" name="desc"><br/>
+        <button type="submit">Submit</button>
+    </form>
+    <br/>
+    <a href="/"> Home Page</a>    
+</body>

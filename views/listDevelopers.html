@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;   
+        }
+    </style>
+     <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Level</th>
+            <th>State</th>
+            <th>Suburb</th>
+            <th>Street</th>
+            <th>Unit</th>
+        </tr>
+         
+        <% for(var i=0; i <database.length;i++){ %>
+            <tr>
+                 <td>
+                    <%= database[i]._id%>
+                </td>
+                <td>
+                    <%= database[i].name.firstname %>
+                </td>
+                <td>
+                    <%= database[i].name.lastname %>
+                </td>
+                <td>
+                    <%= database[i].level %>
+                </td>
+                <td>
+                    <%= database[i].address.state %>
+                </td>
+                <td>
+                    <%= database[i].address.suburb %>
+                </td>
+                <td>
+                    <%= database[i].address.street %>
+                </td>
+                <td>
+                    <%= database[i].address.unit %>
+                </td>    
+            </tr>
+            <% }%>
+
+    </table>
+
+    <a href="/"> Home</a>
+</body>
